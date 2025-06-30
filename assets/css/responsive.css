@@ -436,6 +436,13 @@
     }
 
     /* CONTACT PAGE CSS END */
+
+    /* INNER BANNER CSS START */
+    .innerBannerMain {
+        padding-bottom: 40px;
+    }
+
+    /* INNER BANNER CSS END */
 }
 
 @media only screen and (max-width : 768px) {
@@ -908,7 +915,12 @@
     }
 
     /* CONTACT PAGE CSS END */
+    /* INNER BANNER CSS START */
+    .innerBannerMain {
+        padding-bottom: 30px;
+    }
 
+    /* INNER BANNER CSS END */
 }
 
 @media only screen and (max-width : 576px) {
@@ -1515,4 +1527,11 @@
     }
 
     /* CONTACT PAGE CSS END */
+    /* INNER BANNER CSS START */
+    .innerBannerMain {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /* INNER BANNER CSS END */
 }
