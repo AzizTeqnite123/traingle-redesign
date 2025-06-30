@@ -1,3 +1,16 @@
+@media only screen and (max-width : 1250px) {
+
+    /* HOME PAGE CSS START */
+    .bacgrndBnrCnt {
+        margin-left: 40px;
+    }
+
+    .footLogoHldr {
+        width: auto;
+    }
+    /* HOME PAGE CSS END */
+}
+
 @media only screen and (max-width : 1024px) {
 
     /* HOME PAGE STYLING START */
@@ -43,7 +56,7 @@
     }
 
     .mainBanCtgBox:nth-of-type(6n + 4) {
-        margin: 0px !important;
+        margin: 0px;
     }
 
     .mainBanCtgBox img {
@@ -155,11 +168,11 @@
     }
 
     .countBox {
-        height: 182px;
+        min-height: 182px;
     }
 
     .countBxWtBg {
-        height: 305px;
+        min-height: 305px;
     }
 
     .countBxWtImgDet .cntBxImg img {
@@ -186,11 +199,11 @@
     }
 
     .countBxWtImgDet {
-        height: 430px;
+        min-height: 430px;
     }
 
     .countBxAbsImg {
-        height: 305px;
+        min-height: 305px;
     }
 
     .cntAbsImg img {
@@ -347,5 +360,959 @@
         border-radius: 20px;
     }
 
+    .announcementBarListHldr {
+        gap: 30px;
+    }
+
     /* HOME PAGE STYLING END */
+}
+
+@media only screen and (max-width : 768px) {
+
+    /* HOME PAGE CSS START */
+    .mainBanner {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .headingTop {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .h1 {
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    .mainBanContent .subHeading {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .mainBanCtgBox {
+        max-width: 250px;
+        gap: 15px;
+    }
+
+    .mainBanCtgBox:nth-child(even) {
+        margin-left: -140px;
+    }
+
+    .mainBanCtgBox:nth-child(odd) {
+        margin-left: -140px;
+    }
+
+    .mainBanCtgBox img {
+        width: 65px;
+    }
+
+    .mainBanRow {
+        gap: 30px;
+    }
+
+    .mainBanCatg {
+        max-width: 700px;
+    }
+
+    .mainBtn :is(a, button) {
+        padding: 12px 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .mainBtn {
+        margin-top: 30px;
+    }
+
+    .typicalMeds {
+        padding-top: 60px;
+    }
+
+    .h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    .typicalMeds .headingHldr .h2 {
+        max-width: 360px;
+    }
+
+    .headingHldr {
+        margin-bottom: 30px;
+    }
+
+    .medsBulletList {
+        gap: 20px;
+    }
+
+    .medsBulletList li {
+        font-size: 14px;
+        line-height: 15px;
+        padding-left: 35px;
+    }
+
+    .medsBulletList li::before {
+        height: 25px;
+        width: 25px;
+        background-size: 12px;
+    }
+
+    .typeMedsImg {
+        height: 380px;
+        width: 100%;
+    }
+
+    .typicalMeds::after {
+        width: 500px;
+        height: 500px;
+        bottom: -90px;
+    }
+
+    .categoryMainSec {
+        padding-top: 130px;
+        padding-bottom: 60px;
+    }
+
+    .categoryMainSec::before {
+        width: 170px;
+        height: 110px;
+        top: 15px;
+    }
+
+    .categoryMainSec .headingHldr .h2 {
+        max-width: 600px;
+    }
+
+    .mainCtgRow {
+        gap: 15px;
+        padding-top: 60px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collection-card-wrapper:nth-of-type(3n + 1) {
+        transform: translateY(0px);
+    }
+
+    .collection-card-wrapper:nth-of-type(3n + 3) {
+        transform: translateY(6px);
+    }
+
+    .collection-card-wrapper {
+        padding: 30px 20px;
+    }
+
+    .collection-card-wrapper {
+        padding: 30px 20px;
+    }
+
+    .collection-card-wrapper .card .card__content .card__heading {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .collection-card-wrapper .card .card__inner .card__media .media img {
+        max-height: 280px;
+    }
+
+    .collection-card-wrapper .card .card__content .mainBtn :is(a, button) {
+        padding: 10px 20px;
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .personlRowHldr {
+        padding: 50px 20px;
+        border-radius: 20px;
+    }
+
+    .personlRowHldr .headingHldr .h2 {
+        max-width: 550px;
+    }
+
+    .countBxCnt .headHldr h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .countBxCnt .headHldr p {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .countBxCnt .headHldr .mainBtn {
+        margin-top: 15px;
+    }
+
+    .countBxCnt .headHldr .mainBtn :is(a, button) {
+        padding: 10px 20px;
+    }
+
+    .countBxWtBg {
+        min-height: 270px;
+    }
+
+    .cntAbsImg img {
+        width: 110px;
+    }
+
+    .countBxAbsImg {
+        min-height: 270px;
+    }
+
+    .countBxWtImgDet .cntBxImg img {
+        width: 160px;
+        height: 130px;
+    }
+
+    .cntBxDet h4 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .countBxWtImgDet .headHldr {
+        margin-top: 30px;
+    }
+
+    .countBxWtImgDet {
+        min-height: 360px;
+    }
+
+    .persnlizedMedicien {
+        margin: 60px 0;
+    }
+
+    .logoListMain {
+        margin: 60px 0;
+    }
+
+    .logoListHldr {
+        padding: 20px 0;
+        gap: 30px;
+    }
+
+    .logoListHldr li img {
+        height: 35px;
+    }
+
+    .logolist_slider {
+        border-radius: 15px;
+    }
+
+    .faqMainSec {
+        margin: 60px 0;
+    }
+
+    .faqMainSec {
+        margin: 60px 0;
+    }
+
+    .faqMainRow .accordion-item-body-content p {
+        padding-top: 10px;
+    }
+
+    .faqMainRow .accordion-item {
+        padding: 20px 0;
+    }
+
+    .faqMainRow .accordion-item-header::after {
+        height: 28px;
+        width: 28px;
+        background-size: 11px;
+    }
+
+    .faqMainRow .accordion-item-header h5 {
+        font-size: 25px;
+        line-height: 26px;
+    }
+
+    .testimonialMainsec {
+        padding: 60px 0;
+        margin: 60px 0;
+    }
+
+    .testimonialMainsec .headingHldr .h2 {
+        max-width: 400px;
+    }
+
+    .rating_star {
+        margin-bottom: 15px;
+        --star-size: 22px;
+    }
+
+    .con_disc_usr p {
+        margin: 15px 0;
+    }
+
+    .testi_content {
+        margin-bottom: 10px;
+    }
+
+    .testimonialMainsec .swiper .swiper-pagination {
+        padding-top: 40px;
+    }
+
+    .trainingHerosMain {
+        margin: 60px 0;
+    }
+
+    .trngHerosMainHldr {
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .traingHrsCnt .h2 {
+        max-width: 400px;
+    }
+
+    .traingHrsCnt p {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 15px;
+    }
+
+    .traingHrsCnt .mainBtn {
+        margin-top: 30px;
+    }
+
+    .trngBulletPoint li {
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .blogCardMainSec {
+        margin: 60px 0;
+    }
+
+    .blogCardMainSec .headingHldr .h2 {
+        max-width: 500px;
+    }
+
+    .blogMainRow {
+        gap: 15px;
+    }
+
+    .blogCardImg {
+        height: 250px;
+    }
+
+    .blogCardCnt h3 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .blogCardCnt p {
+        margin-top: 15px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .backgorundBanner {
+        margin: 60px 0;
+    }
+
+    .backGroundBanrRow {
+        border-radius: 20px;
+    }
+
+    .bacgrndBnrCnt {
+        max-width: 273px;
+        margin-left: 20px;
+    }
+
+    .bacgrndBnrCnt {
+        padding: 60px 0;
+    }
+
+    .mainFootTop {
+        padding: 50px 0;
+    }
+
+    .footLogoImg {
+        width: 160px;
+    }
+
+    .footLogoDesc {
+        margin-top: 15px;
+    }
+
+    .footLogoDesc p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .footSocItem {
+        margin-top: 15px;
+    }
+
+    .ftLinksHldrMn {
+        gap: 15px;
+    }
+
+    .mainFootTopRow {
+        gap: 30px;
+    }
+
+    .footLinksHldr {
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+
+    .footLinksHldr h3 {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .siteLinksMn {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .siteLinksMn li a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .mnFtBtmRow p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .mainFootBtm {
+        padding: 10px 0;
+    }
+
+    .mainCtgRow::after {
+        width: 500px;
+        height: 150px;
+    }
+
+    .cntBxDet {
+        padding-left: 20px;
+        margin-top: 5px;
+    }
+
+    .faqMainRow .accordion-item-body-content p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .mainBanCtgBox:nth-of-type(6n + 4) {
+        margin: 0px;
+    }
+
+    .announcementBarListHldr {
+        gap: 20px;
+    }
+
+    /* HOME PAGE CSS END */
+}
+
+@media only screen and (max-width : 565px) {
+
+    /* HOME PAGE CSS START */
+    .mainBanner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .headingTop {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .mainBanContent .subHeading {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .mainBanCatg {
+        max-width: 530px;
+    }
+
+    .mainBanCtgBox {
+        max-width: 210px;
+        gap: 10px;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .mainBanCtgBox h3 {
+        max-width: 120px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .mainBanCtgBox:nth-of-type(6n + 4) {
+        margin: 0px;
+    }
+
+    .mainBanCtgBox:nth-child(odd) {
+        margin: 0px;
+    }
+
+    .mainBanCtgBox:nth-child(even) {
+        margin-left: -100px;
+    }
+
+    .mainBanCtgBox img {
+        width: 55px;
+    }
+
+    .mainBanCatg {
+        gap: 15px;
+    }
+
+    .mainBtn :is(a, button) {
+        padding: 10px 20px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .typicalMeds {
+        padding-top: 40px;
+    }
+
+    .h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .medsBulletList {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .medsBulletList li:first-child {
+        max-width: 100%;
+    }
+
+    .medsBulletList li {
+        max-width: 250px;
+    }
+
+    .headingHldr {
+        margin-bottom: 20px;
+    }
+
+    .medsBulletList li {
+        padding-left: 30px;
+    }
+
+    .medsBulletList li::before {
+        height: 22px;
+        width: 22px;
+        background-size: 9px;
+    }
+
+    .typeMedsImg {
+        height: 230px;
+        width: 100%;
+    }
+
+    .typicalMeds::after {
+        width: 300px;
+        height: 300px;
+        bottom: -70px;
+    }
+
+    .categoryMainSec::before {
+        width: 120px;
+        height: 80px;
+        top: 15px;
+    }
+
+    .utility-bar :is(.container, .page-width) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .categoryMainSec {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .mainCtgRow::after {
+        width: 300px;
+        height: 100px;
+        top: 0;
+    }
+
+    .mainCtgRow {
+        padding-top: 40px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collection-card-wrapper {
+        padding: 20px 15px;
+    }
+
+    .collection-card-wrapper .card .card__content .card__heading {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .collection-card-wrapper .card .card__inner .card__media .media img {
+        max-height: 240px;
+    }
+
+    .collection-card-wrapper .card {
+        gap: 15px;
+    }
+
+    .collection-card-wrapper .card .card__content .mainBtn {
+        gap: 10px;
+    }
+
+    .collection-card-wrapper .card .card__content .mainBtn :is(a, button) {
+        padding: 8px 16px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .collection-card-wrapper {
+        border-radius: 10px;
+    }
+
+    .persnlizedMedicien {
+        margin: 40px 0;
+    }
+
+    .personlRowHldr {
+        padding: 40px 15px;
+        border-radius: 12px;
+    }
+
+    .countBox:nth-of-type(4n + 1) {
+        grid-area: 1 / 1 / span 1 / span 12;
+    }
+
+    .countBox:nth-of-type(4n + 2) {
+        grid-area: 2 / 1 / span 1 / span 12;
+    }
+
+    .countBox:nth-of-type(4n + 3) {
+        grid-area: 3 / 1 / span 1 / span 12;
+    }
+
+    .countBox:nth-of-type(4n + 4) {
+        grid-area: 4 / 1 / span 1 / span 12;
+    }
+
+    :is(.container, .page-width) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .countBox {
+        padding: 15px;
+        border-radius: 10px;
+        min-height: 136px;
+    }
+
+    .countBxCnt .headHldr .mainBtn :is(a, button) {
+        padding: 8px 16px;
+    }
+
+    .countBxWtBg {
+        min-height: 240px;
+    }
+
+    .countBxWtImgDet .cntBxImg img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .countBxCnt .headHldr h3 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .cntBxDet h4 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .cntBxDet h5 {
+        margin-top: 10px;
+    }
+
+    .countBxWtImgDet {
+        min-height: 300px;
+    }
+
+    .countBxWtImgDet .headHldr {
+        margin-top: 20px;
+    }
+
+    .cntAbsImg img {
+        width: 100px;
+    }
+
+    .countBxAbsImg {
+        min-height: 230px;
+    }
+
+    .cntAbsImg {
+        right: 20px;
+    }
+
+    .logoListMain {
+        margin: 40px 0;
+    }
+
+    .logoListHldr {
+        padding: 15px 0;
+        gap: 20px;
+    }
+
+    .logoListHldr li img {
+        height: 26px;
+    }
+
+    .logolist_slider {
+        border-radius: 10px;
+    }
+
+    .faqMainSec {
+        margin: 40px 0;
+    }
+
+    .faqMainRow .accordion-item-header h5 {
+        font-size: 20px;
+        line-height: 21px;
+    }
+
+    .faqMainRow .accordion-item-header::after {
+        height: 22px;
+        width: 22px;
+        background-size: 9px;
+    }
+
+    .faqMainRow .accordion-item-body-content p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .faqMainRow .accordion-item-body-content {
+        padding-top: 5px;
+    }
+
+    .faqMainRow .accordion-item {
+        padding: 15px 0;
+    }
+
+    .testimonialMainsec {
+        padding: 40px 0;
+        margin: 40px 0;
+    }
+
+    .testimonialMainsec .swiper .swiper-pagination {
+        padding-top: 20px;
+    }
+
+    .testimonialMainsec .swiper .swiper-pagination-bullet {
+        margin: 0px 4px !important;
+        height: 8px;
+        width: 8px;
+    }
+
+    .testi_reviw_box {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .rating_star {
+        margin-bottom: 10px;
+        --star-size: 18px;
+    }
+
+    .testi_user_info h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .con_disc_usr p {
+        margin: 10px 0;
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .testi_content {
+        margin-bottom: 0px;
+    }
+
+    .trainingHerosMain {
+        margin: 40px 0;
+    }
+
+    .trngHerosMainHldr {
+        border-radius: 15px;
+        padding: 30px 20px;
+    }
+
+    .traingHrsCnt p {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .trngBulletPoint {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .trngBulletPoint li {
+        min-width: 223px;
+        font-size: 14px;
+        line-height: 15px;
+        gap: 10px;
+    }
+
+    .trngBulletPoint li::before {
+        height: 25px;
+        width: 25px;
+        border-radius: 5px;
+    }
+
+    .traingHrsCnt .mainBtn {
+        margin-top: 20px;
+    }
+
+    .trngHerosMainHldr::after {
+        bottom: -325px;
+    }
+
+    .blogCardMainSec {
+        margin: 40px 0;
+    }
+
+    .blogMainRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogCardImg {
+        height: 230px;
+    }
+
+    .blogCardImg img {
+        border-radius: 10px;
+    }
+
+    .blogCardCnt {
+        margin-top: 15px;
+    }
+
+    .blogCardCnt h3 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .blogCardCnt p {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .backgorundBanner {
+        margin: 40px 0;
+    }
+
+    .backGroundBanrRow {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .bacgrndBnrCnt {
+        padding: 40px 0 0;
+    }
+
+    .mainBtn {
+        margin-top: 20px;
+    }
+
+    .bacgrndBnrCnt {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bacgrndBnrCnt .h2 {
+        text-align: center;
+    }
+
+    .bacgrndBnrCnt .mainBtn :is(a, button) {
+        margin-left:
+            auto;
+        margin-right: auto;
+    }
+
+    .mainFootTop {
+        padding: 40px 0;
+    }
+
+    .footLogoImg {
+        width: 140px;
+    }
+
+    .footLogoDesc {
+        margin-top: 10px;
+    }
+
+    .footLogoDesc p {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .footSocItem {
+        margin-top: 10px;
+    }
+
+    .ftLinksHldrMn {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .footLinksHldr {
+        padding: 20px 15px;
+        border-radius: 10px;
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .siteLinksMn {
+        margin-top: 15px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footLinksHldr h3 {
+        font-size: 17px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .mnFtBtmRow p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .mainFootBtm {
+        padding: 8px 0;
+    }
+
+    .categoryMainSec .headingHldr .h2,
+    .faqMainSec .headingHldr .h2 {
+        max-width: 330px;
+    }
+
+    /* HOME PAGE CSS END */
 }

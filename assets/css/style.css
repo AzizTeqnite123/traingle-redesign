@@ -577,7 +577,7 @@ img {
 }
 
 .logoListHldr li img {
-    min-height: 45px;
+    height: 45px;
     object-fit: contain;
 }
 
@@ -706,6 +706,19 @@ img {
     overflow: hidden;
 }
 
+.trainingHerosMain .container .smptext {
+    font-family: Sofia Pro;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #00000080;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
 .trngHerosMainHldr {
     padding: 50px;
     padding-bottom: 0px !important;
@@ -723,7 +736,7 @@ img {
     width: 85%;
     height: 100%;
     position: absolute;
-    bottom: -300px;
+    bottom: -245px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -978,9 +991,9 @@ img {
     transform: translateY(-50%);
     right: 0px;
     background-image: url(../images/faq-open.svg);
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    background-size: 14px !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 14px;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -1092,7 +1105,7 @@ img {
     border-radius: 15px;
     background-color: #0000001A;
     backdrop-filter: blur(200px);
-    height: 205px;
+    min-height: 205px;
 }
 
 .countBxCnt .headHldr h3 {
@@ -1148,7 +1161,7 @@ img {
     background-color: transparent;
     position: relative;
     overflow: hidden;
-    height: 350px;
+    min-height: 350px;
 }
 
 .countBxWtBg::after {
@@ -1173,7 +1186,7 @@ img {
 }
 
 .countBxWtImgDet {
-    height: 497px;
+    min-height: 497px;
 }
 
 .countBxWtImgDet .cntBxImg img {
@@ -1234,7 +1247,7 @@ img {
 }
 
 .countBxAbsImg {
-    height: 350px;
+    min-height: 350px;
 }
 
 .countBxAbsImg .countBxCnt .headHldr p {
@@ -1426,3 +1439,12 @@ img {
 }
 
 /* MAIN FOOTER CSS END */
+
+/* INNER BANNER SECTION CSS START */
+.innerBannerMain {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #F2F2F2;
+}
+
+/* INNER BANNER SECTION CSS END */

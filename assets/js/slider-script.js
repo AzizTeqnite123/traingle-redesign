@@ -16,13 +16,26 @@ AOS.init();
 
         var swiper = new Swiper(".announcement_slider", {
             slidesPerView: "auto",
-            spaceBetween: 40,
             loop: true,
             autoplay: {
                 delay: 0,
                 disableOnInteraction: false,
             },
             speed: 8000,
+            breakpoints: {
+                150: {
+                    spaceBetween: 20,
+                },
+                576: {
+                    spaceBetween: 20,
+                },
+                769: {
+                    spaceBetween: 30,
+                },
+                1025: {
+                    spaceBetween: 40,
+                },
+            }
         });
     });
 }
@@ -45,17 +58,12 @@ AOS.init();
             slidesPerView: "auto",
             spaceBetween: 60,
             loop: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            speed: 8000,
             breakpoints: {
                 150: {
-                    spaceBetween: 10,
+                    spaceBetween: 20,
                 },
                 576: {
-                    spaceBetween: 15,
+                    spaceBetween: 30,
                 },
                 769: {
                     spaceBetween: 40,
@@ -63,7 +71,12 @@ AOS.init();
                 1025: {
                     spaceBetween: 60,
                 },
-            }
+            },
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            speed: 8000,
         });
     });
 }
