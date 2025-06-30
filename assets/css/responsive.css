@@ -8,6 +8,7 @@
     .footLogoHldr {
         width: auto;
     }
+
     /* HOME PAGE CSS END */
 }
 
@@ -364,7 +365,77 @@
         gap: 30px;
     }
 
+    .container .smptext {
+        margin-top: 40px;
+    }
+
+    .testiRow:not(:has(.swiper)) {
+        gap: 20px;
+    }
+
     /* HOME PAGE STYLING END */
+
+    /* CONTACT PAGE CSS START */
+
+    .contactMain {
+        margin: 80px 0;
+    }
+
+    .contMainRow {
+        padding: 30px;
+        border-radius: 30px;
+        gap: 30px;
+        grid-template-columns: 340px 1fr;
+    }
+
+    .contDet li a {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .contRight h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .contFormMain {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .contFormMain .field :is(input, select, textarea),
+    .contFormMain .field :is(input, select, textarea)::placeholder {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .contFormMain .field :is(input, select, textarea) {
+        height: 45px;
+        padding: 1px 20px;
+    }
+
+    .contFormMain .field :is(textarea) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 240px;
+        border-radius: 20px;
+    }
+
+    .contFormMain .field select {
+        background-size: 22px;
+    }
+
+    .contFormMain .field label {
+        font-size: 16px;
+    }
+
+    .contLeft {
+        height: 550px;
+        border-radius: 20px;
+        padding: 30px 20px;
+    }
+
+    /* CONTACT PAGE CSS END */
 }
 
 @media only screen and (max-width : 768px) {
@@ -495,7 +566,11 @@
     }
 
     .collection-card-wrapper:nth-of-type(3n + 3) {
-        transform: translateY(6px);
+        transform: translateY(0px);
+    }
+
+    .container .smptext {
+        margin-top: 30px;
     }
 
     .collection-card-wrapper {
@@ -807,10 +882,36 @@
         gap: 20px;
     }
 
+    .testiRow:not(:has(.swiper)) {
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* HOME PAGE CSS END */
+
+    /* CONTACT PAGE CSS START */
+    .contMainRow {
+        padding: 20px;
+        border-radius: 20px;
+        gap: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .contLeft {
+        height: 400px;
+        border-radius: 20px;
+        padding: 30px 20px;
+    }
+
+    .contactMain {
+        margin: 60px 0;
+    }
+
+    /* CONTACT PAGE CSS END */
+
 }
 
-@media only screen and (max-width : 565px) {
+@media only screen and (max-width : 576px) {
 
     /* HOME PAGE CSS START */
     .mainBanner {
@@ -895,7 +996,11 @@
     }
 
     .medsBulletList li {
-        max-width: 250px;
+        max-width: 244px;
+    }
+
+    .typicalMeds .headingHldr .h2 {
+        max-width: 300px;
     }
 
     .headingHldr {
@@ -1109,6 +1214,14 @@
         padding: 15px 0;
     }
 
+    .testimonialMainsec .headingHldr .h2 {
+        max-width: 300px;
+    }
+
+    .container .smptext {
+        margin-top: 20px;
+    }
+
     .testimonialMainsec {
         padding: 40px 0;
         margin: 40px 0;
@@ -1314,5 +1427,92 @@
         max-width: 330px;
     }
 
+    .testiRow:not(:has(.swiper)) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
     /* HOME PAGE CSS END */
+
+    /* CONTACT PAGE CSS START */
+    .contactMain {
+        margin: 40px 0;
+    }
+
+    .contMainRow {
+        padding: 10px;
+        border-radius: 15px;
+        gap: 20px;
+    }
+
+    .contLeft {
+        height: 350px;
+        border-radius: 10px;
+        padding: 20px 15px;
+    }
+
+    .contDet li a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .contRight h3 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .contFormMain {
+        margin-top: 20px;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contFormMain .field:has(select, textarea) {
+        grid-column: span 1;
+    }
+
+    .contFormMain .field :is(input, select, textarea) {
+        height: 40px;
+        padding: 1px 20px;
+    }
+
+    .contFormMain .field :is(input, select, textarea),
+    .contFormMain .field :is(input, select, textarea)::placeholder {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .contFormMain .field select {
+        background-size: 18px;
+    }
+
+    .contFormMain .field :is(textarea) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: 150px;
+        border-radius: 15px;
+    }
+
+    .contFormMain .field label {
+        font-size: 14px;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .contFormMain .field .custom-check {
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+    }
+
+    .contFormMain .field input[type="checkbox"]:checked+.custom-check::after {
+        width: 2px;
+        height: 8px;
+    }
+
+    .field.mainBtn :is(a, button) {
+        margin-right: auto;
+    }
+
+    /* CONTACT PAGE CSS END */
 }

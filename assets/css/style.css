@@ -65,6 +65,9 @@
     margin-right: auto;
     border-radius: 100px;
     transition: all ease .3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .mainBtn :is(a, button):hover {
@@ -118,6 +121,18 @@ img {
     font-size: 62px;
     line-height: 78px;
     letter-spacing: 0px;
+}
+
+.h2 em {
+    font-style: normal;
+}
+
+:is(input, textarea, select, label) {
+    font-family: Sofia Pro;
+}
+
+::placeholder {
+    font-family: Sofia Pro;
 }
 
 /* GLOBAL STYLING END */
@@ -706,7 +721,7 @@ img {
     overflow: hidden;
 }
 
-.trainingHerosMain .container .smptext {
+.container .smptext {
     font-family: Sofia Pro;
     font-weight: 300;
     font-size: 12px;
@@ -839,6 +854,12 @@ img {
     margin: 100px 0;
 }
 
+.testimonialMainsec:not(:has(.swiper)) {
+    background: transparent;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
 .testimonialMainsec .headingHldr .h2 {
     text-align: center;
     max-width: 500px;
@@ -848,6 +869,17 @@ img {
 
 .testimonialMainsec .headingHldr .headingTop {
     text-align: center;
+}
+
+
+.testiRow:not(:has(.swiper)) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testiRow .swiper .swiper-wrapper .swiper-slide:nth-of-type(3n+2) .testi_reviw_box {
+    background: #F2F2F2;
 }
 
 .testimonialMainsec .swiper .swiper-pagination {
@@ -872,6 +904,10 @@ img {
     padding: 20px;
     background: #DFE6E3;
     border-radius: 15px;
+}
+
+.testi_reviw_box:nth-of-type(3n + 2) {
+    background: #F2F2F2;
 }
 
 .rating_star {
@@ -1447,4 +1483,202 @@ img {
     background: #F2F2F2;
 }
 
+.innerBannerMain .headingHldr {
+    margin-bottom: 0px !important;
+}
+
+.innerBannerMain .headingTop {
+    text-align: center;
+}
+
+.innerBannerMain .headingHldr .h2 {
+    text-align: center;
+}
+
 /* INNER BANNER SECTION CSS END */
+
+/* CONTACT MAIN CSS START */
+.contactMain {
+    margin: 100px 0;
+}
+
+.contMainRow {
+    display: grid;
+    grid-template-columns: 417px 1fr;
+    gap: 50px;
+    background: radial-gradient(578.33% 664.26% at 52.35% 56.54%, #34765A 0%, #66BD98 100%);
+    border-radius: 40px;
+    padding: 50px;
+}
+
+.contLeft {
+    position: relative;
+    height: 630px;
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.contLeft::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    background: linear-gradient(154.24deg, rgba(0, 0, 0, 0.8) 3.38%, rgba(0, 0, 0, 0) 59.95%);
+}
+
+.contLeftMn {
+    position: relative;
+    z-index: 2;
+}
+
+.contDet {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contDet li a {
+    color: #fff;
+    text-shadow: 2px 1px 0px #3D3D3D;
+    font-family: Sofia Pro;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    max-width: 270px;
+    display: block;
+}
+
+.contLeftMn .mainBtn :is(a, button) {
+    margin-left: 0;
+}
+
+.contRight h3 {
+    font-family: Sofia Pro;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+
+.contFormMain {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.contFormMain .field :is(input, select, textarea) {
+    background: #2A664C;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 1px 30px;
+    border-radius: 100px;
+}
+
+.contFormMain .field :is(input, select, textarea),
+.contFormMain .field :is(input, select, textarea)::placeholder {
+    font-family: Sofia Pro;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #fff;
+}
+
+.contFormMain .field :is(textarea) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 298px;
+    border-radius: 30px;
+}
+
+.contFormMain .field:has(select, textarea) {
+    grid-column: span 2;
+}
+
+.contFormMain .field input[type="checkbox"] {
+    display: none;
+}
+
+.contFormMain .field label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+}
+
+.contFormMain .field .custom-check {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.contFormMain .field input[type="checkbox"]:checked+.custom-check::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.contFormMain .field input[type="checkbox"]:checked+.custom-check {
+    background: #fff;
+}
+
+.contFormMain .field select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/down-ic.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: calc(100% - 20px);
+    cursor: pointer;
+}
+
+.field.mainBtn {
+    margin-top: 0px !important;
+}
+
+.field.mainBtn :is(a, button) {
+    margin-right: 0px;
+    background: #fff;
+    color: #000;
+    transition: all ease .3s;
+}
+
+.field.mainBtn :is(a, button):hover {
+    background: #000;
+    color: #fff;
+}
+
+/* CONTACT MAIN CSS END */
